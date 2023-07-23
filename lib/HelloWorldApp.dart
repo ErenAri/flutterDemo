@@ -1,3 +1,4 @@
+import 'package:firstdemo/MainPage.dart';
 import 'package:flutter/material.dart';
 
 class HelloWorldApp extends StatelessWidget{
@@ -9,19 +10,8 @@ class HelloWorldApp extends StatelessWidget{
         appBar:AppBar(
           title: Text("App bar title"),
         ),
-        body: Material(
-          color: Colors.amber[400],
-          child: Center(
-            child: Text("Hello World",
-            textDirection: TextDirection.ltr,
-            style: TextStyle(
-              color: Colors.red[900],
-              fontSize: 50.0,
-            ),
-            ),
-          ),
-        ),
-        ),
+        body: Mainpage()
+        )
     );
   }
 }
